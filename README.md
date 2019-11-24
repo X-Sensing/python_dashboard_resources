@@ -2,6 +2,14 @@
 
 This repo is a place to store some info, notebooks and code samples for the X-sensing workshop Python Plotly dashboard building demo. 
 
+### Directory contents overview
+
+<ul>
+  <li> notebooks: will hold jupyter notebooks for demonstrating or implementing various parts of the process
+  <li> xsense_dashboard: will stores the full version of the dashboard app
+  <li> intermediate_dashboards: will store a set of sub-directories which conatin the dashboard code at intermediate stages
+</ul> 
+
 ### Purpose of the demo workshop 
 
 The goal for this demo is not aesthetic visualizations or professional level web-apps but to serve as an example of an all in one solution for serving simple interactive dashboards at a level that would be useful for scientific teams or internal analytics and data sharing. 
