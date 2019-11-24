@@ -13,7 +13,6 @@ In this context these are the advantages:
 <li> It only uses free open-source resources. Python, Plotly Charts, Plotly Dash, Flask and deployed on a linux machine.
 <li> Once some personal styles are chosen and the basic ideas understood, there are sufficient examples and libraries available that it is reasonable to take a personal "grey box approach" and requires only small amount of web-languages such as HTML and CSS.
 <li> It is native to the more powerful data-science, data-manipulation. statistical and mathematical modeling languages. i.e. python (and an R version). And so seemless integrates with modeling and analytics projects.
-<li>
 </ul>
 
 ### The demo project will be outlined in a series of jupyter notebooks where code can be run interactively. Hopefully we will be able to through the following steps:
