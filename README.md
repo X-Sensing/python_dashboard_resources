@@ -18,17 +18,16 @@ In this context these are the advantages:
 
 ### The demo project will be outlined in a series of jupyter notebooks where code can be run interactively. Hopefully we will be able to through the following steps:
 
-
 <ul>
 <ol> setup the instalation of the required python packages and a demo of the mechanics of running an app
 <ol> outline of a simple project. 
 <ol> The creation and formating of the required data using common python models: pandas and scipy.stats
 <ol> The construction of a python function of an interactive Plotly chart that will be requied for the app
 <ol> Look over the structure of how Dash lays out the webpage and incorporates interactive components
-<li> Go through the processes of how the interactive components are coded to manipulate the page and graphics
-<li> Run the created app in a web browser on your computer
-<li> A demonstration of deployment on AWS (data-science style not developer style) 
-<li> Outline somethings that have not been covered
+<ol> Go through the processes of how the interactive components are coded to manipulate the page and graphics
+<ol> Run the created app in a web browser on your computer
+<ol> A demonstration of deployment on AWS (data-science style not developer style) 
+<ol> Outline somethings that have not been covered
 <ul>
 
 
