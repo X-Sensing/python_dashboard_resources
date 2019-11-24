@@ -54,5 +54,15 @@ http://xsensing_intermediate_2.utscicdata.io
 http://xsensing_intermediate_3.utscicdata.io
 
 
-
+### The Python packages you will need can be installed with the commands below 
+<ul>
+<li> pip install pip
+<li> pip install pandas
+<li> pip install numpy
+<li> pip install scipy 
+<li> pip install dash
+<li> pip install dash-auth
+<li> pip install requests
+<li> pip install matplotlib
+</ul>
 
