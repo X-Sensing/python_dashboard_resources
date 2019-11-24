@@ -8,7 +8,10 @@ http://xsensing_final.utscicdata.io
 
 The username and password will be given to access this.
 
-Some intermediate versions for demonstration will also be running at the following URLs
+Some intermediate versions for demonstration will also be running at the following URLs:
 
+http://xsensing_intermediate_1.utscicdata.io
 
+http://xsensing_intermediate_2.utscicdata.io
 
+http://xsensing_intermediate_3.utscicdata.io
