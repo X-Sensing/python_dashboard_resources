@@ -4,11 +4,12 @@ This repo is a place to store some info, notebooks and code samples for the X-se
 
 ### Directory contents overview
 
-<ul>
-  <li> **notebooks**  will hold jupyter notebooks for demonstrating or implementing various parts of the process
-  <li> **xsense_dashboard**  will stores the full version of the dashboard app
-  <li> **intermediate_dashboards**  will store a set of sub-directories which conatin the dashboard code at intermediate stages
-</ul> 
+**notebooks**  will hold jupyter notebooks for demonstrating or implementing various parts of the process
+
+**xsense_dashboard**  will stores the full version of the dashboard app
+
+**intermediate_dashboards**  will store a set of sub-directories which conatin the dashboard code at intermediate stages
+ 
 
 ### Purpose of the demo workshop 
 
