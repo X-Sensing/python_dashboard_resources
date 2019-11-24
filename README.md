@@ -2,11 +2,11 @@
 
 This repo is a place to store some info, notebooks and code samples for the X-sensing workshop Python Plotly dashboard building demo. 
 
-### Purpose
+### Purpose of the demo workshop 
 
-The goal here is not aesthetic visualizations or profesional level web-apps but to serve as an example of an all in one solution for serving simple interactive dashboards at level that would be useful for scientic teams or internal analytics and data sharing. 
+The goal for this demo is not aesthetic visualizations or profesional level web-apps but to serve as an example of an all in one solution for serving simple interactive dashboards at a level that would be useful for scientic teams or internal analytics and data sharing. 
 
-In this context there are some advantages:
+In this context these are the advantages:
 
 <ul>
 <li> The entire app can be created in a single python program which handles the construction of webpage, the interactive visualizations and the widget and components to control them.
@@ -16,20 +16,36 @@ In this context there are some advantages:
 <li>
 </ul>
 
+### The demo project will be outlined in a series of jupyter notebooks where code can be run interactively. Hopefully we will be able to through the following steps:
 
 
-A running version of the simple dashboard demo we are making can be found here (not currently finished):
+<ul>
+<ol> setup the instalation of the required python packages and a demo of the mechanics of running an app
+<ol> outline of a simple project. 
+<ol> The creation and formating of the required data using common python models: pandas and scipy.stats
+<ol> The construction of a python function of an interactive Plotly chart that will be requied for the app
+<ol> Look over the structure of how Dash lays out the webpage and incorporates interactive components
+<li> Go through the processes of how the interactive components are coded to manipulate the page and graphics
+<li> Run the created app in a web browser on your computer
+<li> A demonstration of deployment on AWS (data-science style not developer style) 
+<li> Outline somethings that have not been covered
+<ul>
+
+
+### A running version of the dashboard demo we are making can be found here (not currently finished):
 
 http://xsensing_final.utscicdata.io
 
 The username and password will be given to access this.
 
-Some intermediate versions for demonstration will also be running at the following URLs:
+Some intermediate versions for demonstration will also be run at the following URLs:
 
 http://xsensing_intermediate_1.utscicdata.io
 
 http://xsensing_intermediate_2.utscicdata.io
 
 http://xsensing_intermediate_3.utscicdata.io
+
+
 
 
