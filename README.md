@@ -54,7 +54,7 @@ http://xsensing_intermediate_2.utscicdata.io
 http://xsensing_intermediate_3.utscicdata.io
 
 
-### The Python packages you will need can be installed with the commands below 
+# The Python packages you will need can be installed with the commands below 
 <ul>
 <li> pip install pip
 <li> pip install pandas
