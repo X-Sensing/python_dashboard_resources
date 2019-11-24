@@ -41,7 +41,7 @@ In this context these are the advantages:
 
 ### A running version of the dashboard demo we are making can be found here (not currently finished):
 
-http://xsensing_final.utscicdata.io
+http://xsensing.utscicdata.io
 
 The username and password will be given to access this.
 
