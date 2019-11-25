@@ -52,8 +52,50 @@ http://xsensing_intermediate_1.utscicdata.io
 http://xsensing_intermediate_2.utscicdata.io
 
 
+# Getting started
 
-# The Python packages you will need can be installed with the commands below 
+## Quick discussion of what is most important?
+
+
+## Software Requirements and installation
+
+- Only requires open source software and it is valuable to have these requirements set up locally
+
+
+### Reqquied: python, pip and jupyter-notebooks
+
+- a local instalation in your standard working environement is best
+
+- ssh connection to a linux server
+
+- web based jupyternotebooks may have difficulty  and would need to be tested
+
+
+### How many people have a local instalation of this software working?
+
+
+### If not then are you able to install it on your laptop?
+
+- Anaconda is an easyway to get everything working in one go
+
+
+- Anaconda can be installed for linux, mac and windows: https://www.anaconda.com/distribution/
+
+
+- If you need to install  Anaconda via the command-line installation I can give instructions
+
+
+## Get the project code
+
+## You can download or clone the Repo for this this repo:
+
+- https://github.com/X-Sensing/python_dashboard_resources
+
+
+- we need to open the notebook: notebook_1_xdash_overview_and_setup.ipynb located in the notebook subdirectory.
+
+
+# The Python packages for this projedt you will need can be installed with the commands below 
 <ul>
 <li> pip install pip
 <li> pip install pandas
@@ -64,4 +106,6 @@ http://xsensing_intermediate_2.utscicdata.io
 <li> pip install requests
 <li> pip install matplotlib
 </ul>
+
+
 
