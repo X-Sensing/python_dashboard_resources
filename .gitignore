@@ -2,3 +2,5 @@ data/
 .gitignore
 .ipynb_checkpoints
 .ipynb_checkpoints/*
+deploy_scripts
+deploy_scripts/*
