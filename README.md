@@ -41,7 +41,7 @@ In this context these are the advantages:
 
 ### A running version of the dashboard demo we are making can be found here (not currently finished):
 
-http://xsensing.utscicdata.io
+http://xsensing_dash_demo.utscicdata.io
 
 The username and password will be given to access this.
 
@@ -51,7 +51,6 @@ http://xsensing_intermediate_1.utscicdata.io
 
 http://xsensing_intermediate_2.utscicdata.io
 
-http://xsensing_intermediate_3.utscicdata.io
 
 
 # The Python packages you will need can be installed with the commands below 
