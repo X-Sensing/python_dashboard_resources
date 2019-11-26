@@ -1,3 +1,28 @@
+
+### UPDATES:
+
+- The notebook directory will now have a set of notebooks starting with "unbroken" that have the stop-points for discussion taken out and should execute in full.
+- unbroken_notebook_2 will generate the data needed for the full dashboard codes and so should be run first
+
+- I'll leave the demo's running for a while but I'll soon add a username (somekind of undead creature )and password (a leadership position):  
+
+Here are some links to resources and software mentioned:
+
+- Anaconda python instalation: https://www.anaconda.com/distribution/
+
+- Bootstrap CSS: https://getbootstrap.com/ 
+
+- Plotly Dash: https://plot.ly/dash/
+
+- Plotly Graphs: https://plot.ly/python/
+
+
+### Given the technical difficulties of the deploy demo (internet, storm in Sydney or just Murphy's law) I will put  together a full set of instructions for full deployment including AWS EC2, route 53, port mapping, screen and nginx setup. I'll place this in a seperated document in this repo.
+
+### END UPDATES
+
+
+
 # python_dashboard_resources
 
 This repo is a place to store some info, notebooks and code samples for the X-sensing workshop Python Plotly dashboard building demo. 
@@ -9,7 +34,9 @@ This repo is a place to store some info, notebooks and code samples for the X-se
 **xsense_dashboard**  will stores the full version of the dashboard app
 
 **intermediate_dashboards**  will store a set of sub-directories which conatin the dashboard code at intermediate stages
- 
+
+
+
 
 ### Purpose of the demo workshop 
 
