@@ -1,41 +1,21 @@
-
-### UPDATES:
-
-- The notebook directory will now have a set of notebooks starting with 
-"unbroken" that have the stop-points for discussion taken out and should execute in full.
-
-- unbroken_notebook_2 will generate the data needed for the full dashboard codes and so should be run first
-
-- I'll leave the demo's running for a while but I'll soon add a username (somekind of undead creature )and password (a leadership position):  
-
-Here are some links to resources and software mentioned:
-
-- Anaconda python instalation: https://www.anaconda.com/distribution/
-
-- Bootstrap CSS: https://getbootstrap.com/ 
-
-- Plotly Dash: https://plot.ly/dash/
-
-- Plotly Graphs: https://plot.ly/python/
-
-
-### Given the technical difficulties of the deploy demo (internet, storm in Sydney or just Murphy's law) I will put  together a full set of instructions for full deployment including AWS EC2, route 53, port mapping, screen and nginx setup. I'll place this in a seperated document in this repo.
-
-### END UPDATES
-
-
-
 # python_dashboard_resources
 
 This repo is a place to store some info, notebooks and code samples for the X-sensing workshop Python Plotly dashboard building demo. 
 
-### Directory contents overview
+##  Directory Contents Overview
 
-**notebooks**  will hold jupyter notebooks for demonstrating or implementing various parts of the process
+**data** place holder directory with relative path required by the apps
 
-**xsense_dashboard**  will stores the full version of the dashboard app
+**documents_and_notes** More detailed notes on parts of the process such as AWS deployment and Python setup
 
-**intermediate_dashboards**  will store a set of sub-directories which conatin the dashboard code at intermediate stages
+**notebooks** The notebooks from the workshop but without the stop points that should execute through
+
+**notebooks_with_workshop_stop_points** The workshop notebooks
+
+**workshop_intermediate_dashboard** The python code for each stage of the dashboard
+
+**xsense_app** This will update as the "stats by eye" app is finished off
+
 
 
 
@@ -83,7 +63,8 @@ http://xsensing_intermediate_2.utscicdata.io
 
 # Getting started
 
-## Quick discussion of what is most important?
+
+## Quick discussion of what is most important to learn?
 
 
 ## Software Requirements and installation
@@ -91,13 +72,13 @@ http://xsensing_intermediate_2.utscicdata.io
 - Only requires open source software and it is valuable to have these requirements set up locally
 
 
-### Reqquied: python, pip and jupyter-notebooks
+### Requied: python, pip and jupyter-notebooks
 
 - a local instalation in your standard working environement is best
 
 - ssh connection to a linux server
 
-- web based jupyternotebooks may have difficulty  and would need to be tested
+- web based jupyter notebooks collab tools may have difficulty and are last resort
 
 
 ### How many people have a local instalation of this software working?
@@ -107,11 +88,9 @@ http://xsensing_intermediate_2.utscicdata.io
 
 - Anaconda is an easyway to get everything working in one go
 
-
 - Anaconda can be installed for linux, mac and windows: https://www.anaconda.com/distribution/
 
-
-- If you need to install  Anaconda via the command-line installation I can give instructions
+- If you need to install  Anaconda via the command-line installation then see EC2 setup in  AWS deploy notes
 
 
 ## Get the project code
@@ -124,7 +103,7 @@ http://xsensing_intermediate_2.utscicdata.io
 - we need to open the notebook: notebook_1_xdash_overview_and_setup.ipynb located in the notebook subdirectory.
 
 
-# The Python packages for this projedt you will need can be installed with the commands below 
+# The Python packages for this project. They will need can be installed with the commands below 
 <ul>
 <li> pip install pip
 <li> pip install pandas

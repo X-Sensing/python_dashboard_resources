@@ -1,5 +1,6 @@
 notebooks/.ipynb_checkpoints/*
 notebooks/.ipynb_checkpoints
-data/df_random_distributions.pickle
+data/df_random_distributions.pickle/.ipynb_checkpoints/*
+notebooks_with_workshop_stop_points/.ipynb_checkpoints
 
 
