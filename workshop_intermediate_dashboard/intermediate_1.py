@@ -75,7 +75,7 @@ slider_marks = {i: {'label':str(10 ** i), 'style': {'color': 'white'}} for i in 
 ##############################################################################################################
 
 app = dash.Dash()
-app.title = 'Xsense DEV'
+app.title = 'Xsense Intermediate 1'
 
 ###################################################################################################
 # Style and colors
@@ -118,6 +118,9 @@ def make_layout():
             html.Div(children=[
                 #%%%%%%%%%%%%%%%%%% START COLUMN 1 row 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+
+
                 # COMPONENT 1 (heading)
                 html.Div(children=[
                     html.H5(children='Mystery Distribution 1',
@@ -133,26 +136,16 @@ def make_layout():
                     ],
                     className = 'text-center col-xs-12 p-4 mx-auto',
                     ),
+                    ####################################################################################
+                    ####################################################################################
+                    ##################### RangeSlder goes here #########################################
+ 
 
 
-                    # COMPONENT 3 (rangeSlder)
-                    html.Div(children=[
-                        dcc.Slider(
-                            id = 'sample_slider_1',
-                            marks = slider_marks,
-                            max = np.log10(max_sample_size),
-                            value = np.log10(max_sample_size),
-                            step = 0.1,
-                            updatemode = "drag",
-                            className = 'text-white',
+                    ####################################################################################
+                    ####################################################################################
+                    ####################################################################################
 
-
-                        )
-                    ],
-                    className = 'text-center col-xs-12 p-4 mx-auto',
-                    ),
-                    html.H5(children='Raster sample size',
-                            className='mx-auto  text-white')
                 ],
                 # Column layout, width and behaviour is specified using Bootstrap CSS
                 className='col-md-6 text-center col-xs-12 p-3',
@@ -160,48 +153,18 @@ def make_layout():
                 #%%%%%%%%%%%%%%%%%%%%% END COLUMN 1 (row 2) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-                #### COPY FIRST COLUMN AND EDIT
-                #%%%%%%%%%%%%%%%%%%%%% START COLUMN 2 (row 2) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-                html.Div(children=[
-                    html.H5(children='Mystery Distribution 2',
-                            className='mx-auto  text-white'),
-                    # COMPONENT 2 (dropdown)
-                    html.Div(children=[
-                        dcc.Dropdown(
-                            id='Mystery_2',
-                            options=distribution_options,
-                            value=distribution_options[1]['label'],
-                            className='text-center'
-                        ),
-                    ],
-                        className='text-center p-4 mx-auto',
-                    ),
-
-                    # COMPONENT 3 (rangeSlder)
-                    html.Div(children=[
-                        dcc.Slider(
-                            id='sample_slider_2',
-                            marks=slider_marks,
-                            max=np.log10(max_sample_size),
-                            value=np.log10(max_sample_size),
-                            step=0.1,
-                            updatemode="drag",
-                            className='text-white',
-
-                        )
-                    ],
-                        className='text-center p-4 mx-auto',
-                    ),
-                    html.H5(children='Raster sample size',
-                            className='mx-auto  text-white')
-                ],
-                    # Column layout, width and behaviour is specified using Bootstrap CSS
-                    className='col-md-6 text-center col-xs-12 p-3',
-                ),
-                # %%%%%%%%%%%%%%%%%%%%% END COLUMN 2  row 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                ####################################################################################
+                #########################  COPY FIRST COLUMN AND EDIT FOR SECOND ROW ##############
+                ####################################################################################
 
 
+
+
+
+
+                ####################################################################################
+                ####################################################################################
+                ####################################################################################
 
 
             ],
@@ -248,15 +211,10 @@ app.layout = make_layout()
 Output('distribution_graph_id', 'figure'),
 [
 Input('Mystery_1', 'value'),
-Input('sample_slider_1', 'value'),
-Input('Mystery_2', 'value'),
-Input('sample_slider_2', 'value'),
 ]
 )
-def t_by_eye(name_sample_1, sample_size_1, name_sample_2, sample_size_2):
-    x_1 = df[name_sample_1].sample(transform_value(sample_size_1)).values
-    x_2 = df[name_sample_2].sample(transform_value(sample_size_2)).values
-
+def t_by_eye(name_sample_1):
+    x_1 = df[name_sample_1]
     layout = {
         'yaxis': dict(title='Density(X)'),
         'xaxis': dict(title='X'),
@@ -278,24 +236,14 @@ def t_by_eye(name_sample_1, sample_size_1, name_sample_2, sample_size_2):
 
     )
 
-    data_2 = go.Histogram(
-        x=x_2,
-        histnorm='probability',
-        opacity=0.4,
-        name=name_sample_2,
-        bingroup='a',
-        xbins=dict(
-            start=0.0,
-            end=100,
-        ),
-    )
-    data = [data_1, data_2]
+
+    data = [data_1]
     figure = {'data': data, 'layout': layout}
     return figure
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(host='0.0.0.0', port=8001)
 
 
 

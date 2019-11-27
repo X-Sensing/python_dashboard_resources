@@ -1,7 +1,9 @@
 
 ### UPDATES:
 
-- The notebook directory will now have a set of notebooks starting with "unbroken" that have the stop-points for discussion taken out and should execute in full.
+- The notebook directory will now have a set of notebooks starting with 
+"unbroken" that have the stop-points for discussion taken out and should execute in full.
+
 - unbroken_notebook_2 will generate the data needed for the full dashboard codes and so should be run first
 
 - I'll leave the demo's running for a while but I'll soon add a username (somekind of undead creature )and password (a leadership position):  
