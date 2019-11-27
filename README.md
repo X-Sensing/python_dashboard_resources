@@ -69,7 +69,7 @@ http://xsensing_intermediate_2.utscicdata.io
 
 ## Software Requirements and installation
 
-- Only requires open source software and it is valuable to have these requirements set up locally
+Only requires open source software and it is valuable to have these requirements set up locally
 
 
 ### Requied: python, pip and jupyter-notebooks
@@ -98,7 +98,6 @@ http://xsensing_intermediate_2.utscicdata.io
 ## You can download or clone the Repo for this this repo:
 
 - https://github.com/X-Sensing/python_dashboard_resources
-
 
 - we need to open the notebook: notebook_1_xdash_overview_and_setup.ipynb located in the notebook subdirectory.
 
