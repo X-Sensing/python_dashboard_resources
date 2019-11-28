@@ -9,7 +9,7 @@ from dash.dependencies import Input,Output,State
 import dash_auth
 import numpy as np
 import plotly.graph_objs as go
-
+import pickle
 
 ###################################################################################################
 # Helper functions
@@ -28,6 +28,7 @@ def make_dash_option_list(name_list,  sort=False):
     for column_name in s:
         op_list.append({'label':str(column_name), 'value':str(column_name)})
     return op_list
+
 
 
 def transform_value(value):
@@ -63,23 +64,27 @@ slider_marks = {i: {'label':str(10 ** i), 'style': {'color': 'white'}} for i in 
 #############################################################################################################
 # PASSWORDS should not be in the code (external file/database or hidden in environment variables are options)
 ##############################################################################################################
-
-#VALID_USERNAME_PASSOWORD_PAIRS = [
-#    ['user1','pass1'],
-#    ['user2', 'pass2'],
-#    ]
+cred_file = '../../cred.pickle'
 
 
-#app = dash.Dash('auth') ;
-#auth = dash_auth.BasicAuth(app, VALID_USERNAME_PASSOWORD_PAIRS)
+with open(cred_file,'rb') as fh:
+    VALID_USERNAME_PASSWORD_PAIRS=pickle.load(fh)
+
+
+app = dash.Dash('auth')
+auth = dash_auth.BasicAuth(app, VALID_USERNAME_PASSWORD_PAIRS)
 ##############################################################################################################
 
-app = dash.Dash()
-app.title = 'Xsense DEV'
 
+#app = dash.Dash()
+
+
+app.title = 'Xsense DEV'
 ###################################################################################################
 # Style and colors
 ###################################################################################################
+
+
 
 background_color = "#333333"
 

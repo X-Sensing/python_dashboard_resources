@@ -2,11 +2,14 @@
 
 This repo is a place to store some info, notebooks and code samples for the X-sensing workshop Python Plotly dashboard building demo. 
 
+Note the **deploy_cloud_and_AWS** directory for more detailed notes on parts of the process 
+such as AWS deployment, EC2 and NGINX setup etc
+
 ##  Directory Contents Overview
 
 **data** place holder directory with relative path required by the apps
 
-**documents_and_notes** More detailed notes on parts of the process such as AWS deployment and Python setup
+**deploy_cloud_and_AWS** More detailed notes on parts of the process such as AWS deployment and Python setup
 
 **notebooks** The notebooks from the workshop but without the stop points that should execute through
 
