@@ -210,7 +210,7 @@ NGINX virtual.conf file, e.g. the following line would use port: 8000:
 app.run_server(host='0.0.0.0', port=8000)
 ```
 
-from the linux command line start the screen:
+From the linux command line start the screen:
 
 
 ```
