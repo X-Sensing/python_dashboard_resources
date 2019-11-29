@@ -122,12 +122,12 @@ sudo yum-config-manager --enable epe
 
 # NGINX and Route 53:  serving multiple apps and (optionally) assigning personal URls
 
-## Route 53 (optional)
 
-### Route 53 Buying a personal Domain (if you don't have one)
+### (Optional) Route 53 Buying a personal Domain (if you don't have one)
 
+- details to come
 
-### Creating sub-domain names and assigning them to the EC2
+### (Optional) Creating sub-domain names and assigning them to the EC2
   
 - details to come
 
