@@ -38,22 +38,22 @@ some handy workflow hints**
  
  - Select the computer size. Be aware of th costs involved! 
  
- >> **Next: configure instance details**
+ **>> Next: configure instance details**
  
  - The next page should be left as the default unless you know what 
  you are doing 
  
- >> **Next: Add Storage**
+ **>> Next: Add Storage**
  
  - Storage cost charged while the instance exists (whether on or off). So it should be 
  chosen conservatively. It can be easily increased at any time. 
  
- >> **Next: Add Tags**
+ **>> Next: Add Tags**
  
  - Tags are key-value pairs used as basic meta data and searching. 
  They are optional and can be added if desired. 
  
- >> **Next: Add Security**
+ **>> Next: Add Security**
  
  - Security groups allow passage or access to the EC2 from selected ports over selected 
  IP ranges. In general you will need to open the ssh port (22) over some range 
@@ -61,7 +61,7 @@ some handy workflow hints**
  protocols will need to be open. If security is an issue than these 
  should be used as appropriate. 
  
- >> **Next: Review and Launch**
+ **>> Next: Review and Launch**
  
  - Check and **Launch**
  
