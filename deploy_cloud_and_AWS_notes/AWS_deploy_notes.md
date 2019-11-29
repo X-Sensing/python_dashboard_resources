@@ -32,7 +32,7 @@ some handy workflow hints**
  
  In the main AWS console:
  
- - Launch Instance
+ - select Launch Instance button
  
  - Select your instance type (I use the default Amazon Linux 2 AMI)
  
@@ -65,8 +65,14 @@ some handy workflow hints**
  
  - Check and **Launch**
  
+ At this point you will be prompted to: use-an-existing-key-pair, create-new-key-pair. There is also
+ an option to proceed with None. **you should use a key-pair**
  
- ### Adding and elastic (static/unchanging) IP
+ 
+ 
+ ## Adding and elastic (static/unchanging) IP
+ 
+ 
  
  - A static IP is preferable for an EC2 running webapps or for simplifying  
  ssh login. Without a fixing elastic IP to your EC2 the IP address will change 
@@ -83,6 +89,7 @@ some handy workflow hints**
  ```
 sudo yum update -y 
 ```
+
 **Anaconda Python Install Anaconda**
 
 <ul>
@@ -121,6 +128,7 @@ sudo yum-config-manager --enable epe
 
 ## NGINX setup
 
+
 The mapping of the port to the appropriate URL can be done via a configuration file: This can be done in the
 file: /etc/nginx/conf.d/virtual.conf 
 
@@ -128,9 +136,7 @@ check if the file /etc/nginx/conf.d/virtual.conf exists and if it does not exist
 
 sudo touch /etc/nginx/conf.d/virtual.conf
 
-
 An example config file is below: 
-
 
 ```
 #
@@ -166,7 +172,6 @@ server {
 
 ```
 
-
 This would serve an app at: 
     zombie_king.utscicdata.io 
 which needed to be run on port 8000: For example an Plotly Dash app with the following 
@@ -185,8 +190,6 @@ that was run on port 8001 e.g. a Plotly Dash app run with:
 app.run_server(host='0.0.0.0', port=8001)
 ```
 
-
-
 # Deploy: screen and run 
 
 To run the web apps without them terminating when we log out. The python code can be run in 
@@ -202,9 +205,11 @@ app.run_server(host='0.0.0.0', port=8000)
 
 from the linux command line start the screen:
 
+
 ```
 screen -S sensible_name
 ```
+
 
 then run the app code: 
 
@@ -213,6 +218,5 @@ python app_file_name.py
 ```
 
 and close the terminal i.e. press the GUI "x" in the top corner
-
 
 
