@@ -2,7 +2,7 @@
 
 ## General overview
 
-EC2 is the standard cloud computer in Amazon Web Services (AWS). 
+EC2 is the standard cloud computer on Amazon Web Services (AWS). 
 
 - It can be thought of as a fully contained remote computer. 
 
