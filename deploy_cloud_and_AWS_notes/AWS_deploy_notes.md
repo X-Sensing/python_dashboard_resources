@@ -36,22 +36,32 @@ some handy workflow hints**
  
  - Select your instance type (I use the default Amazon Linux 2 AMI)
  
- - Select the computer size. Be aware of th costs involved! >> **Next: configure instance details**
+ - Select the computer size. Be aware of th costs involved! 
+ 
+ >> **Next: configure instance details**
  
  - The next page should be left as the default unless you know what 
- you are doing >> **Next: Add Storage**
+ you are doing 
+ 
+ >> **Next: Add Storage**
  
  - Storage cost charged while the instance exists (whether on or off). So it should be 
- chosen conservatively. It can be easily increased at any time. >> **Next: Add Tags**
+ chosen conservatively. It can be easily increased at any time. 
+ 
+ >> **Next: Add Tags**
  
  - Tags are key-value pairs used as basic meta data and searching. 
- They are optional and can be added if desired. >> **Next: Add Security**
+ They are optional and can be added if desired. 
+ 
+ >> **Next: Add Security**
  
  - Security groups allow passage or access to the EC2 from selected ports over selected 
  IP ranges. In general you will need to open the ssh port (22) over some range 
  (0.0.0.0/0 would allow connection from anywhere). For a dashboard the http, https 
  protocols will need to be open. If security is an issue than these 
- should be used as appropriate. >> **Next: Review and Launch**
+ should be used as appropriate. 
+ 
+ >> **Next: Review and Launch**
  
  - Check and **Launch**
  
