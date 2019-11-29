@@ -125,11 +125,17 @@ sudo yum-config-manager --enable epe
 
 ### (Optional) Route 53 Buying a personal Domain (if you don't have one)
 
-- details to come
+- Go to the Route 53 (service pull down)
+
+- You can buy a new domain from the menu. It will then be list in the Hosted Zone Menu 
+
+- 
 
 ### (Optional) Creating sub-domain names and assigning them to the EC2
   
-- details to come
+To create a sub-domain from the Hosted Zone
+
+- Select the Hosted Zone 
 
 
 ## NGINX setup
