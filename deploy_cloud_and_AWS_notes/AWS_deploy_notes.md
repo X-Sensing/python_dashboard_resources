@@ -30,14 +30,38 @@ some handy workflow hints**
  
  ## Creating an EC2 in the Amazon console
  
- - **details to add**
+ In the main AWS console:
+ 
+ - Launch Instance
+ 
+ - Select your instance type (I use the default Amazon Linux 2 AMI)
+ 
+ - Select the computer size. Be aware of th costs involved! >> **Next: configure instance details**
+ 
+ - The next page should be left as the default unless you know what 
+ you are doing >> **Next: Add Storage**
+ 
+ - Storage cost charged while the instance exists (whether on or off). So it should be 
+ chosen conservatively. It can be easily increased at any time. >> **Next: Add Tags**
+ 
+ - Tags are key-value pairs used as basic meta data and searching. 
+ They are optional and can be added if desired. >> **Next: Add Security**
+ 
+ - Security groups allow passage or access to the EC2 from selected ports over selected 
+ IP ranges. In general you will need to open the ssh port (22) over some range 
+ (0.0.0.0/0 would allow connection from anywhere). For a dashboard the http, https 
+ protocols will need to be open. If security is an issue than these 
+ should be used as appropriate. >> **Next: Review and Launch**
+ 
+ - Check and **Launch**
  
  
  ### Adding and elastic (static/unchanging) IP
  
- A static IP is preferable for an EC2 running webapps or for simplifying  
+ - A static IP is preferable for an EC2 running webapps or for simplifying  
  ssh login. Without a fixing elastic IP to your EC2 the IP address will change 
  each time you turn the instance off and on. 
+ 
  
  - **details to add**
  
@@ -55,7 +79,8 @@ sudo yum update -y
 <li> get the link to the latest version of Anaconda: https://www.anaconda.com/download/#linux
 <li> right click the 'x86 link 64 bit link' and copy link location
 <li> in the ec2 terminal "wget [and paste link]"
-<li> this should look like this but the latest version: wget https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
+<li> this should look like this but the latest version: 
+wget https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
 <li> This will download the install script which just needs to be run to install
 <li> e.g.: bash /bin/sh Anaconda3-XXXXXXXXX-Linux-x86_64.sh
 </ul>
@@ -178,5 +203,6 @@ python app_file_name.py
 ```
 
 and close the terminal i.e. press the GUI "x" in the top corner
+
 
 
