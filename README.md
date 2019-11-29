@@ -25,7 +25,8 @@ such as AWS deployment, EC2 and NGINX setup etc
 
 ### Purpose of the demo workshop 
 
-The goal for this demo is not aesthetic visualizations or professional level web-apps but to serve as an example of an all in one solution for serving simple interactive dashboards at a level that would be useful for scientific teams or internal analytics and data sharing. 
+The goal for this demo is not to make  professional level web-apps but to serve as an example of an all in one solution for serving simple interactive dashboards at a level 
+that would be useful for scientific teams or internal analytics and data sharing. 
 
 In this context these are the advantages:
 

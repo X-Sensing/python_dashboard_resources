@@ -5,4 +5,7 @@
 .gitignore
 ./data/df_random_distributions.pickle
 **/pw.pickle
+**/.DS_Store
+**/*~
+
 
