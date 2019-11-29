@@ -72,14 +72,21 @@ some handy workflow hints**
  
  ## Adding and elastic (static/unchanging) IP
  
- 
- 
- - A static IP is preferable for an EC2 running webapps or for simplifying  
+ A static IP is preferable for an EC2 running webapps or for simplifying  
  ssh login. Without a fixing elastic IP to your EC2 the IP address will change 
  each time you turn the instance off and on. 
  
  
- - **details to add**
+From the main EC2 dashboard menu: 
+
+- Action Menu >> Manage IP >> Allocate an Elastic IP
+- On the new screen select: Allocate
+- This makes a new Static (Elastic) IP address
+- Action Menu >> Associate Elastic IP >> From the Pulldown menu select the appropriate EC2 >> Select Associate 
+
+The EC2 now has an IP address that will not change.
+
+
  
  ### Some setup hints for Linux EC2
  
@@ -119,7 +126,6 @@ sudo yum-config-manager --enable epe
 
 ### Route 53 Buying a personal Domain (if you don't have one)
 
-- details to come
 
 ### Creating sub-domain names and assigning them to the EC2
   
@@ -173,9 +179,10 @@ server {
 ```
 
 This would serve an app at: 
+
     zombie_king.utscicdata.io 
-which needed to be run on port 8000: For example an Plotly Dash app with the following 
-app.run_server() command:
+    
+which needed to be run on port 8000: For example an Plotly Dash app with the following app.run_server() command:
 
 ```
 app.run_server(host='0.0.0.0', port=8000)
