@@ -97,16 +97,15 @@ Only requires open source software and it is valuable to have these requirements
 - If you need to install  Anaconda via the command-line installation then see EC2 setup in  AWS deploy notes
 
 
-## Get the project code
 
-## You can download or clone the Repo for this this repo:
+## Get the project code: It's in this repo. You can download or clone this Repo from:
 
 - https://github.com/X-Sensing/python_dashboard_resources
 
-- we need to open the notebook: notebook_1_xdash_overview_and_setup.ipynb located in the notebook subdirectory.
+- Tp start we need to open the notebook: notebook_1_xdash_overview_and_setup.ipynb located in the notebook subdirectory.
 
 
-# The Python packages for this project. They will need can be installed with the commands below 
+# There are several  Python packages for this project that need to be installed. This can be done with the commands below:
 <ul>
 <li> pip install pip
 <li> pip install pandas
