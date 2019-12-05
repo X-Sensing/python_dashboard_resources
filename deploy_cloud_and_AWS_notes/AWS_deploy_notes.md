@@ -70,7 +70,7 @@ some handy workflow hints**
  
  
  
- ## Adding and elastic (static/unchanging) IP
+ ## Adding an elastic (static/unchanging) IP
  
  A static IP is preferable for an EC2 running webapps or for simplifying  
  ssh login. Without a fixing elastic IP to your EC2 the IP address will change 
@@ -129,14 +129,25 @@ sudo yum-config-manager --enable epe
 
 - You can buy a new domain from the menu. It will then be list in the Hosted Zone Menu 
 
-- 
+
+
 
 ### (Optional) Creating sub-domain names and assigning them to the EC2
   
 To create a sub-domain from the Hosted Zone
 
-- Select the Hosted Zone 
+- Select the domain
 
+- Create record Set
+
+- In the top of the right hand panel input the new sub-domain name you want
+
+Then assign the URL to the appropriate EC2 by either:
+
+<ol>
+<li> leave type=A - IPv4 address and in the value box enter the IP of the EC2
+<li> change type=CNAME and use the CNAME of the EC2
+</ol>
 
 ## NGINX setup
 
