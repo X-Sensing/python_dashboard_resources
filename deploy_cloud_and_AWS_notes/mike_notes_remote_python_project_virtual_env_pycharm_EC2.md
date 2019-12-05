@@ -62,7 +62,5 @@ or select previously created deployment for that EC2
 - add Add deployment paths at top level of project:
 - relative_path/remote_only
 - Add local paths and exclude  /full_local_path/local_only
-- Make these directories on the remote and local machine respectively (this is done first)
-
 
 
