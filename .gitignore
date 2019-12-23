@@ -2,9 +2,6 @@
 **/.ipynb_checkpoints
 **/__pycache__
 **/__pycache__/*
-.gitignore
-**/.gitignore
-**/.gitignore/*
 **/pw.pickle
 **/.DS_Store
 **/.DS_Store/*
