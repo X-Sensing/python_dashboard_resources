@@ -9,8 +9,19 @@ from dash.dependencies import Input,Output,State
 import dash_auth
 import numpy as np
 import plotly.graph_objs as go
+import argparse
 
+###################################################################################################
+# Command line deploy options
+###################################################################################################
 
+parser = argparse.ArgumentParser()
+parser.add_argument("-p", "--port", type=int, help='If port is given than app is deployed on that port otherwise debug=True')
+args = parser.parse_args()
+if args.port:
+    rserver_args={"host":"0.0.0.0","port":args.port}
+else:
+    rserver_args={"debug":True}
 ###################################################################################################
 # Helper functions
 ###################################################################################################
@@ -295,7 +306,8 @@ def t_by_eye(name_sample_1, sample_size_1, name_sample_2, sample_size_2):
 
 
 if __name__ == '__main__':
-    app.run_server(host='0.0.0.0', port=8000)
+    #app.run_server(host='0.0.0.0', port=8000)
+    app.run_server(**rserver_args)
 
 
 

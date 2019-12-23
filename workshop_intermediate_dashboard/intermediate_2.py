@@ -9,7 +9,19 @@ from dash.dependencies import Input,Output,State
 import dash_auth
 import numpy as np
 import plotly.graph_objs as go
+import argparse
 
+###################################################################################################
+# Command line deploy options
+###################################################################################################
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-p", "--port", type=int, help='If port is given than app is deployed on that port otherwise debug=True')
+args = parser.parse_args()
+if args.port:
+    rserver_args={"host":"0.0.0.0","port":args.port}
+else:
+    rserver_args={"debug":True}
 
 ###################################################################################################
 # Helper functions
