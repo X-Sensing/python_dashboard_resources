@@ -1,6 +1,6 @@
 - Here are some links to resources and software mentioned:
 
-- Anaconda python instalation: https://www.anaconda.com/distribution/
+- Anaconda python installation: https://www.anaconda.com/distribution/
 
 - Bootstrap CSS: https://getbootstrap.com/ 
 

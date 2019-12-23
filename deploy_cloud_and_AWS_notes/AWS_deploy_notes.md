@@ -21,7 +21,7 @@ general there are two options:
 1) make all your code locally and move across when ready for deploying
 
 2) port map between your machine and the EC2 so you can code locally using jupyter or an 
-IDE but the project is synced to the EC2. In this case the python kernal will generally be on
+IDE but the project is synced to the EC2. In this case the python kernel will generally be on
 the EC2 as will the data. This can be a necessity if the data-set must be stored in the cloud.
 
 **I will make a separate document on connection and port forwarding for terminal users, with 
@@ -82,7 +82,7 @@ From the main EC2 dashboard menu:
 - Action Menu >> Manage IP >> Allocate an Elastic IP
 - On the new screen select: Allocate
 - This makes a new Static (Elastic) IP address
-- Action Menu >> Associate Elastic IP >> From the Pulldown menu select the appropriate EC2 >> Select Associate 
+- Action Menu >> Associate Elastic IP >> From the Pull-down menu select the appropriate EC2 >> Select Associate 
 
 The EC2 now has an IP address that will not change.
 
