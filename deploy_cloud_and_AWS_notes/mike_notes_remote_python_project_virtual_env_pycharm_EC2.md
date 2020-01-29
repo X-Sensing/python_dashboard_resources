@@ -9,7 +9,7 @@ for each project make a new virtual environment:
 ```
 cd /home/ec2-user/virtual_environments
 
-virtualenv -p $(which python3) [the_project_name_or_similar]
+virtualenv [the_project_name_or_similar]
 
 ```
 
